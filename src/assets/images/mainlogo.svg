@@ -1,0 +1,92 @@
+<svg width="793" height="505" viewBox="0 0 793 505" fill="none" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style type="text/css">
+    :root {
+      --outer-color: #F1D00A;
+      --inner-color: #F0F0F0;
+    }
+
+    svg {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .code-logo,
+    .letter {
+      /* transition: all 1s ease-out; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .code-logo {
+      transform-origin: 50% 50%;
+      animation: test1 2.5s ease-in-out 1;
+
+
+    }
+
+    @keyframes test1 {
+      0% {
+        transform: rotatex(0deg) rotatey(0deg) rotatez(45deg) scale(.01);
+        opacity: 0;
+      }
+
+      25% {
+        opacity: 1;
+      }
+
+      40% {
+        transform: rotatex(180deg) rotatey(360deg) rotatez(225deg) scale(1);
+      }
+
+      60% {
+        transform: rotatex(180deg) rotatey(360deg) rotatez(225deg) scale(1);
+
+      }
+
+      100% {
+        transform: rotatex(0deg) rotatey(0deg) rotatez(0deg) scale(1);
+
+      }
+    }
+
+
+
+    @keyframes rotateAnimation {
+      from {
+        transform: rotateY(-180deg);
+        opacity: 0%;
+      }
+
+      to {
+        transform: rotateY(360deg);
+        opacity: 100%;
+      }
+    }
+  </style>
+
+  <g clip-path="url(#clip0_7_2)">
+    <path class="letter"
+      d="M409.293 144.933L374.875 144.658L323.591 400.781L305.349 402.432L327.721 277.809L317.052 282.761C308.103 286.888 305.005 287.163 296.745 288.813C288.484 290.189 280.568 290.189 272.996 289.088C264.735 287.988 261.293 286.612 255.098 283.311C248.903 280.01 243.74 275.058 239.954 269.556C236.168 263.779 233.07 258.827 232.037 250.849C231.005 242.871 232.382 234.893 234.791 224.164L253.033 142.732L215.861 142.182L218.27 130.903L411.359 132.829L409.293 144.933ZM355.945 144.108L271.963 143.007L254.41 225.539C253.033 231.591 252.344 237.369 252.344 242.321C252.344 247.272 253.033 251.674 254.754 255.526C256.475 259.377 259.228 262.403 262.67 264.604C266.112 267.08 270.931 268.455 277.126 269.281C286.763 270.656 297.433 269.006 306.382 265.154C315.331 261.578 326.345 257.451 333.228 250.574L355.945 144.108Z"
+      fill="var(--inner-color)" />
+    <path class="code-logo"
+      d="M571.405 417.012L555.573 407.384L737.303 215.635L497.405 70.6548L509.452 58L765.526 212.334L759.331 218.937L571.405 417.012Z"
+      fill="var(--outer-color)" />
+    <path class="code-logo"
+      d="M286.075 439.846L298.121 426.916L57.879 281.661L239.954 90.1873L224.121 80.5586L30 284.687L37.9163 289.639L286.075 439.846Z"
+      fill="var(--outer-color)" />
+    <path class="code-logo" d="M445.794 62.4355L424.708 59.814L350.646 440.378L371.731 443L445.794 62.4355Z"
+      fill="var(--outer-color)" />
+    <path class="letter"
+      d="M450.94 260.202L475.721 144.383L506.698 143.007C509.796 142.732 512.894 142.732 515.991 143.007C554.54 144.108 558.326 165.566 553.163 190.05L549.377 207.932C542.494 240.67 530.447 256.901 479.507 259.102L450.94 260.202ZM522.531 129.252C518.745 129.252 514.959 129.252 511.173 129.252L457.135 131.728L398.968 403.532L420.996 402.707L448.187 273.682L477.442 272.307C545.247 269.281 564.177 246.997 571.749 207.932L575.191 189.5C581.387 155.662 569.684 130.627 522.531 129.252Z"
+      fill="var(--inner-color)" />
+  </g>
+  <defs>
+    <clipPath id="clip0_7_2">
+      <rect width="793" height="505" fill="white" />
+    </clipPath>
+  </defs>
+</svg>

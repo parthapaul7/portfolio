@@ -1,16 +1,19 @@
 <template>
   <div>
     <Navbar/>
+    <Home/>
   </div>
 </template>
 
 <script>
 import Navbar from '@/components/navbar/Navbar.vue'
+import Home from '@/components/home/Home.vue'
 
 export default {
   name: 'App',
   components: {
-    Navbar
+    Navbar,
+    Home
   }
 }
 </script>
@@ -32,5 +35,6 @@ export default {
 body{
   margin: 0;
   font-family: 'Roboto Mono', monospace;
+  background-color: var(--primary-dark);
 }
 </style>
