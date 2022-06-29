@@ -26,6 +26,8 @@ main {
   position: relative;
   min-height: calc(100vh - 70px);
   overflow: hidden;
+
+  margin-top: 70px;
 }
 
 .mainTexts {

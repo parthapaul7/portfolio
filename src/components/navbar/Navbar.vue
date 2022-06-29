@@ -28,6 +28,10 @@ export default {
     align-content: center;
     background-color: var(--nav-blue);
     color: white;
+
+    position: fixed;
+    top: 0;
+    z-index: 10;
    } 
    .navBtns{
     width: 40%;
