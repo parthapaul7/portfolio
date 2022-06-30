@@ -27,7 +27,7 @@ export default {
 <style scoped>
 .main{
     width: 100vw;
-    height: 100vh;
+    min-height: 90vh;
 }
 .heading{
     width: fit-content;

@@ -2,6 +2,7 @@
   <div>
     <Navbar/>
     <Home/>
+    <about-me/>
     <ProjectPage/>
   </div>
 </template>
@@ -10,12 +11,14 @@
 import Navbar from '@/components/navbar/Navbar.vue'
 import Home from '@/components/home/Home.vue'
 import ProjectPage from '@/components/projects/ProjectPage.vue'
+import AboutMe from '@/components/about/AboutMe.vue'
 export default {
   name: 'App',
   components: {
     Navbar,
     Home,
-    ProjectPage
+    ProjectPage,
+    AboutMe
   }
 }
 </script>
