@@ -96,8 +96,8 @@ export default {
 }
 .heading {
   width: fit-content;
-  margin: 5rem auto;
-  margin-bottom: 0;
+  margin: 0 auto;
+  margin-top: 1rem;
   color: white;
   font-size: 36px;
 }
@@ -145,7 +145,7 @@ export default {
   right: 0vw;
   bottom: -90vh;
   width: 50%;
-  z-index: 0;
+  z-index: -1;
   animation: moveup1 8s infinite linear;
   animation-delay: 3s;
 }
@@ -185,12 +185,16 @@ export default {
 @keyframes moveup1 {
   0% {
     transform: translateY(0);
+    opacity: 0;
+  }
+  1%{
+    opacity: 100;
   }
   30% {
-    transform: translateY(-190vh);
+    transform: translateY(-200vh);
   }
   100% {
-    transform: translateY(-190vh);
+    transform: translateY(-200vh);
   }
 }
 @keyframes moveup2 {
@@ -199,6 +203,10 @@ export default {
   }
   35% {
     transform: translateY(0vh);
+    display: none;
+  }
+  36% {
+    display: block;
   }
   65% {
     transform: translateY(-190vh);
@@ -210,9 +218,14 @@ export default {
 @keyframes moveup3 {
   0% {
     transform: translateY(0);
+    opacity: 0;
   }
   20% {
     transform: translateY(0vh);
+    opacity: 0;
+  }
+  21% {
+    opacity: 100;
   }
   50% {
     transform: translateY(-190vh);

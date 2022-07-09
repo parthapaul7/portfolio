@@ -1,12 +1,17 @@
 <template>
   <main>
-    <img src="@/assets/images/arrow5.png" alt="arrow5" class="arrow5" />
+    <!-- <img src="@/assets/images/arrow5.png" alt="arrow5" class="arrow5" />
     <img src="@/assets/images/arrow4.png" alt="arrow4" class="arrow4" />
     <img src="@/assets/images/arrow3.png" alt="arrow3" class="arrow3" />
     <img src="@/assets/images/arrow2.png" alt="arrow2" class="arrow2" />
-    <img src="@/assets/images/arrow1.png" alt="arrow1" class="arrow1" />
+    <img src="@/assets/images/arrow1.png" alt="arrow1" class="arrow1" /> -->
     <div class="mainTexts">
-      <div class="text"> Hey <br>i'm partha <br> web developer</div>
+      <div class="text"> Hey <br>i'm partha <br> web developer
+      <div class="homeButtons">
+      <button-filled name="<AboutMe/>" />     
+      <button-outline name="<ContactMe/>" />
+      </div> 
+      </div>
       <div class="mainLogo">
         <img src="@/assets/images/mainlogo.svg" alt="bigLogo" />
       </div>
@@ -15,8 +20,14 @@
 </template>
 
 <script>
+import ButtonFilled from "@/components/buttons/ButtonFill.vue";
+import ButtonOutline from "@/components/buttons/ButtonOutline.vue";
 export default {
   name: "Home",
+  components: {
+    ButtonOutline,
+    ButtonFilled,
+  },
 };
 </script>
 
@@ -26,8 +37,9 @@ main {
   position: relative;
   min-height: calc(100vh - 70px);
   overflow: hidden;
-
+  z-index: 50;
   margin-top: 70px;
+  background-color: var(--primary-dark);
 }
 
 .mainTexts {
@@ -51,6 +63,14 @@ main {
     width: 100%;
 }
 
+.homeButtons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 50%;
+}
+
+ /* code for animatins */
 main > img {
   position: absolute;
 }

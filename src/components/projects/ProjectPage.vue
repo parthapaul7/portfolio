@@ -26,8 +26,12 @@ export default {
 </script>
 <style scoped>
 .main{
+    position: relative;
     width: 100vw;
     min-height: 90vh;
+    z-index: 50;
+    background-color:var(--primary-dark);
+    margin-bottom: 5rem;
 }
 .heading{
     width: fit-content;
