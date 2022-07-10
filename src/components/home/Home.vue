@@ -71,7 +71,7 @@ main {
 }
 
  /* code for animatins */
-main > img {
+/* main > img {
   position: absolute;
 }
 .arrow1 {
@@ -182,5 +182,5 @@ main > img {
   100% {
     transform: translateY(-190vh);
   }
-}
+} */
 </style>

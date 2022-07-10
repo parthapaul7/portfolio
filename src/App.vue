@@ -44,5 +44,6 @@ body{
   width: 100vw;
   overflow-x: hidden;
   color: white;
+
 }
 </style>

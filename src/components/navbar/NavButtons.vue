@@ -1,26 +1,27 @@
 <template>
     <div class="btn" @click="makeActive">
-       <div :class="['btnName' , isActive && 'highlight']">{{"<"}}{{name}}{{"/>"}}</div> 
-       <div  :class="['underline', !isActive && 'invisible animate-underline']"></div>
-    </div>
+       <div :class="['btnName' , this.position.active && 'highlight']">{{"<"}}{{name}}{{"/>"}}</div> 
+       <div  :class="['underline', !this.position.active&& 'invisible animate-underline']"></div>
+    </div>  
 </template>
 
 <script>
 export default {
    name: 'NavButtons', 
+   emits: ['scroll'],
    props: {
       name:String,
-      active:Boolean,
+      position:Object,
       
    },
    data(){
       return {
-        isActive:this.active,
       }
    },
    methods:{
       makeActive(){
-        this.isActive= true;
+        this.$emit('scroll',this.position.x,this.position.y,this.position.name);
+        // this.isActive= true;
       }
    }
 }

@@ -2,10 +2,10 @@
     <nav>
         <div class="logoSm"><img src="@/assets/images/logo-sm.svg" alt="logo" lazy></div>
         <div class="navBtns">
-            <NavButtons name="Home" :active="true"/>
-            <NavButtons name="aboutMe" :active="false"/>
-            <NavButtons name="Projects" :active="false"/>
-            <NavButtons name="Contact" :active="false"/>
+            <NavButtons name="Home"  @scroll="scrollTo" :position="scrollPositions[0]"/>
+            <NavButtons name="aboutMe"  @scroll="scrollTo" :position="scrollPositions[1]"/>
+            <NavButtons name="Projects" @scroll="scrollTo" :position="scrollPositions[2]"/>
+            <NavButtons name="Contact" @scroll="scrollTo" :position="scrollPositions[3]"/>
         </div>
     </nav>
 </template>
@@ -16,7 +16,51 @@ export default {
     name: 'Navbar',
     components: {
         NavButtons
-    }
+    },
+    data() {
+        return {
+            scrollPositions: [
+                {
+                    name: 'Home',
+                    x: 0,
+                    y: 0,
+                    active: true
+                },
+                {
+                    name: 'aboutMe',
+                    x: 0,
+                    y:700,
+                    active: false,
+                },
+                {
+                    name: 'Projects',
+                    x: 0,
+                    y: 1500,
+                    active: false,
+
+                },
+                {
+                    name: 'Contact',
+                    x: 0,
+                    y: 0,
+                    active: false,
+                }
+            ],
+        }
+    },
+    methods: {
+        scrollTo(x,y,name) {
+            this.scrollPositions.forEach((item,index)=>{
+                if(item.name==name){
+                    this.scrollPositions[index].active=true;
+                }else{
+                    this.scrollPositions[index].active=false;
+                }
+            });
+            console.log("name",name,this.scrollPositions);
+            window.scrollTo(x, y);
+        }
+    },
 }
 </script>
 <style scoped>

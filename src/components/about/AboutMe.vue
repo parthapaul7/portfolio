@@ -192,24 +192,34 @@ export default {
   }
   30% {
     transform: translateY(-200vh);
+    opacity: 100;
+  }
+  31%{
+    opacity: 0;
   }
   100% {
     transform: translateY(-200vh);
+    opacity: 0;
   }
 }
 @keyframes moveup2 {
   0% {
     transform: translateY(0);
+    opacity: 0;
   }
   35% {
     transform: translateY(0vh);
-    display: none;
+    opacity: 0;
   }
   36% {
-    display: block;
+    opacity: 100;
   }
   65% {
     transform: translateY(-190vh);
+    opacity: 100;
+  }
+  66%{
+    opacity: 0;
   }
   100% {
     transform: translateY(-190vh);
@@ -229,6 +239,10 @@ export default {
   }
   50% {
     transform: translateY(-190vh);
+    opacity: 100;
+  }
+  51%{
+    opacity: 0;
   }
   100% {
     transform: translateY(-190vh);
