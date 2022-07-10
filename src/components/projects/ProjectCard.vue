@@ -85,4 +85,36 @@ export default {
 .right img{
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .card{
+    width: 100%;
+    max-width: 320px;
+    height: 640px;
+
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    padding: 0;
+
+    border-radius: 15px;
+  }
+  .left{
+    width: 100%;
+    padding: 1rem;
+  }
+  .right{
+    width: 100%;
+    padding: 1rem;
+    padding-top: 2rem;
+    margin: 0;
+  }
+  .right img{
+    width: calc(100% - 2rem);
+  }
+  .desc{
+    font-size: 12px;
+    padding-right: 1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
 </style>

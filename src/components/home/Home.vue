@@ -8,7 +8,9 @@
     <div class="mainTexts">
       <div class="text"> Hey <br>i'm partha <br> web developer
       <div class="homeButtons">
+      <a href="#aboutMe">
       <button-filled name="<AboutMe/>" />     
+      </a>
       <button-outline name="<ContactMe/>" />
       </div> 
       </div>
@@ -69,7 +71,33 @@ main {
     margin-top: 2rem;
     width: 50%;
 }
+a{
+  text-decoration: none;
+}
 
+@media screen and (max-width: 768px) {
+  main{
+    min-height: fit-content;
+    height: fit-content;
+  }
+  .mainTexts {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-left: 5%;
+  }
+  .text{
+    width: 100%;
+    font-size: 40px;
+  }
+  .mainLogo{
+    width: 100%;
+  }
+  .homeButtons{
+    width: 80%;
+    margin-top: 2rem;
+  }
+}
+  
  /* code for animatins */
 /* main > img {
   position: absolute;

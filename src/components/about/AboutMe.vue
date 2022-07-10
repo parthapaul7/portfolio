@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="main" id="aboutMe">
     <img src="@/assets/images/arrow5.png" alt="arrow5" class="arrow5" />
     <img src="@/assets/images/arrow4.png" alt="arrow4" class="arrow4" />
     <img src="@/assets/images/arrow3.png" alt="arrow3" class="arrow3" />
@@ -136,6 +136,49 @@ export default {
   margin: 0 8px;
   cursor:pointer ;
 }
+
+@media screen and  (max-width: 768px) {
+  .main {
+    min-height: 100vh;
+  }
+  .heading {
+    margin-top: 5rem;
+    font-size: 24px;
+  }
+  .underline {
+    width: 150px;
+    margin-bottom: 2rem;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+    padding: 0;
+  }
+  .left img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .right {
+    width: 100%;
+    padding: 2rem;
+  }
+  .right > p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 50px 0;
+  }
+  .social h2 {
+    text-transform: capitalize;
+  }
+  .social svg {
+    width: 40px;
+    margin: 0 8px;
+  }
+}
+  
 
 /* arrow animation */
 .main > img {

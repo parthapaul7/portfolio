@@ -32,4 +32,13 @@ export default {
     width: fit-content;
     margin: auto;
 }
+
+@media  screen and (max-width: 768px) {
+    .outer{
+        width: 120px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
+    
 </style>
