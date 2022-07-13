@@ -47,4 +47,19 @@ export default {
     height: 2px;
     background-color: white;
 }
+
+@media screen and  (max-width: 768px) {
+    .main{
+        min-height: 100vh;
+    }
+    .heading{
+        margin-top: 5rem;
+        font-size: 24px;
+    }
+    .underline{
+        margin-bottom: 2rem;
+        width: 150px;
+    }
+}
+    
 </style>

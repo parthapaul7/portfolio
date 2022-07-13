@@ -140,6 +140,7 @@ export default {
 @media screen and  (max-width: 768px) {
   .main {
     min-height: 100vh;
+    overflow: hidden;
   }
   .heading {
     margin-top: 5rem;
@@ -153,7 +154,7 @@ export default {
     flex-direction: column;
   }
   .left {
-    width: 100%;
+    width: 100vw;
     padding: 0;
   }
   .left img {
@@ -162,13 +163,15 @@ export default {
     margin: 0 auto;
   }
   .right {
-    width: 100%;
+    width: 85vw;
     padding: 2rem;
+    text-align: center;
   }
   .right > p {
     font-size: 16px;
     line-height: 24px;
     margin: 50px 0;
+    text-align: center;
   }
   .social h2 {
     text-transform: capitalize;
@@ -176,6 +179,9 @@ export default {
   .social svg {
     width: 40px;
     margin: 0 8px;
+  }
+  .main >img{
+    display: none;
   }
 }
   

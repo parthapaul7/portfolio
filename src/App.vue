@@ -42,8 +42,8 @@ body{
   font-family: 'Roboto Mono', monospace;
   background-color: var(--primary-dark);
   width: 100vw;
+
   overflow-x: hidden;
   color: white;
-
 }
 </style>

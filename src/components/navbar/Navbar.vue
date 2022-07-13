@@ -90,4 +90,18 @@ export default {
    .logoSm{
     margin-left: 1rem;
    }
+
+   @media screen and (max-width: 768px) {
+    nav{
+        position: static;
+        display: none;
+    }
+    .navBtns{
+       display: none; 
+    }
+    .logoSm{
+        margin: 0 auto;
+    }
+   }
+    
 </style>

@@ -6,7 +6,8 @@
     <img src="@/assets/images/arrow2.png" alt="arrow2" class="arrow2" />
     <img src="@/assets/images/arrow1.png" alt="arrow1" class="arrow1" /> -->
     <div class="mainTexts">
-      <div class="text"> Hey <br>i'm partha <br> web developer
+      <div class="text"> Hey <br>i'm partha <br> 
+      <div class="typing-demo">web developer</div>
       <div class="homeButtons">
       <a href="#aboutMe">
       <button-filled name="<AboutMe/>" />     
@@ -79,6 +80,7 @@ a{
   main{
     min-height: fit-content;
     height: fit-content;
+    margin-top: 0;
   }
   .mainTexts {
     flex-direction: column-reverse;
@@ -97,7 +99,31 @@ a{
     margin-top: 2rem;
   }
 }
-  
+
+/* tying anaimtion */
+.typing-demo {
+  width: 14ch;
+  animation: typing 2s steps(14) infinite alternate, blink 1s infinite alternate;
+  animation-delay: 3s;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 1em;
+  color: white;
+}
+
+@keyframes typing {
+  from {
+    opacity: 100;
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
  /* code for animatins */
 /* main > img {
   position: absolute;
