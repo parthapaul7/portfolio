@@ -1,0 +1,22 @@
+name:deploy 
+
+# Only trigger, when the build workflow succeeded
+on:
+  workflow_run:
+    workflows: ["Node.js CI"]
+    types:
+      - completed
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: deploy website 
+        run: cd ./dist 
+        run: git pull
+        run: git add . 
+        run: git commit -m "deploy"
+        run: git push
