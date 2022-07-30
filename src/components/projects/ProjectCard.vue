@@ -29,7 +29,7 @@ export default {
     return {
       project: {
         type: "Website",
-        name: "Secure Blink",
+        name: "Random Company",
         description: "This is front end project based on Vue.js and Vuex. Where i have i worked on basically in api intigrations and settuing up many tools for the functioning of the website",
         image: "",
         githubLink: "",
